@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Image search</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="index.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    
-</body>
+    <body>
+        <p class="text-[white]">
+            iomage page
+        </p>
+        <div class="uper-links">
+            <button class=" border border-[#303134] hover:border-[#78797C]  p-[15px] rounded-[20px]">
+                <a href="index.html">image search</a>
+            </button>
+            <button class=" border border-[#303134] hover:border-[#78797C]  p-[15px] rounded-[20px]">
+               <a href="advanced-search.html"> Advanced search </a>
+            </button>
+        </div>
+        <div class="main-cont">
+            <div class="img-cont">
+                <img class="google-img" src="googlelogo_light_color_272x92dp.png" alt="google0-logo">
+            </div>
+            <div class="search-cont">
+                <form action="https://www.google.com/search">
+                    <div class="search-input">
+                        <input class="input-field-q" id="q" type="text" name="q">
+                        
+                        <label for="q">
+                            <img class="search-icon-label" src="icons8-search(1).svg" alt="">
+                        </label>
+                    </div>
+                    <div class="btns-cont">
+                        <input class="submit-btn w-[150px]" type="submit" value="Google Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>

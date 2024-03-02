@@ -40,12 +40,14 @@ body{
 }
 
 .input-field-q{
+    padding-right:15px;
     font-size: 20px;
     height: 80%;
     border-radius: 20px;
     background-color: #202124;
     border: none;
     text-align: right;
+    color: white;
 }
 
 .input-field-q:hover,
@@ -76,9 +78,13 @@ body{
     color: white;
     border-radius: 20px;
     border: solid 1px #303134;
+    font-weight: bold;
 }
 
 .submit-btn:hover{
-    
     border-color: rgb(120, 121, 124)
+}
+
+img{
+    display: inline!important;
 }

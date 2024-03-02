@@ -7,15 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>search</title>
-
-    <script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="index.js" defer></script>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
     <body>
         <div class="uper-links">
-            <a href="image-search.html">image</a>
+            <button class=" border border-[#303134] hover:border-[#78797C]  p-[15px] rounded-[20px]">
+                <a href="image-search.html">regular search</a>
+            </button>
+            <button class=" border border-[#303134] hover:border-[#78797C]  p-[15px] rounded-[20px]" >
+                <a href="advanced-search.html"> Advanced search </a>
+            </button>
         </div>
         <div class="main-cont">
             <div class="img-cont">
@@ -25,12 +30,16 @@
                 <form action="https://www.google.com/search">
                     <div class="search-input">
                         <input class="input-field-q" id="q" type="text" name="q">
-                        <label for="q">
-                            <img class="search-icon-label" src="icons8-search(1).svg" alt="">
+                        <label class="label-q" for="q">
+                            <img class="search-icon-label" src="icons8-search(1).svg" alt="search-img">
                         </label>
+                        <input type="hidden" name="tbm" value="isch">
                     </div>
+
+
+
                     <div class="btns-cont">
-                        <input class="submit-btn" type="submit" value="Google Search">
+                        <input class="submit-btn w-[150px]"  type="submit" value="Image Search">
                     </div>
                 </form>
             </div>
