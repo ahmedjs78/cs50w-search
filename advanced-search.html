@@ -34,33 +34,61 @@
         <!-- end green line -->
     </div>
     <!-- search from -->
-    <div class="p-[2.20rem] bg-red-300 h-[100%] w-[100%]">
+    <div class="p-[2.20rem] bg-red-300 h-[100%] w-[100%] max-w-[1140px]">
         <!-- from start -->
         <form action="https://www.google.com/search" class="flex flex-col gap-[10px]">
             <!-- Finding pagfes with start -->
             <div class="big-line-form bg-green-300 h-[41px] ">
                 <div class="flex justify-between ">
-                    <div class="w-[30%]">
-                        <p>Finding pages woith ...</p>
+                    <div class="w-[18%]">
+                        <p>Find pages with...</p>
                     </div>
-                    <div class="w-[40%]"></div>
-                    <div class="w-[30%]">
+                    <div class="w-[57%]"></div>
+                    <div class="w-[40%]">
                         <p>To do this in the search box.</p>
                     </div>
                 </div>
             </div>
             <!-- finding pages with end -->
+            <!-- all this words  -->
             <div class="bg-blue-200 w-[100%] h-[2rem] flex items-center flex-wrap">
-                <div class="min-w-40 w-[16%]">
-                    <p >all these words: </p>
+                <div class="min-w-40 w-[16%] inline-block">
+                    <p class="text-[11px]">all these words: </p>
                 </div>
-                <div class="pr-[10px] w-[56%] border-1 border-[#000] text-right">
-                    <input class="w-[90%]" type="text" name="q">
+                <div class="pr-[10px] w-[50%] border-1 border-[#000] inline-block">
+                    <input class="w-[100%] pl-[10px]" type="text" name="q">
                 </div>
                 <div class="min-w-70 table-cell">
-                    <p class="text-[11px]">Type the important words: tri-colour rat terrier</p>
+                    <p class="text-[11px] inline-block">Type the important words: tri-colour rat terrier</p>
                 </div>
             </div>
+            <!-- all these words end -->
+            <!-- this exact word or phrase -->
+            <div class="bg-blue-200 w-[100%] h-[2rem] flex items-center flex-wrap">
+                <div class="min-w-40 w-[16%] inline-block">
+                    <p class="text-[11px]">this exact word or phrase:</p>
+                </div>
+                <div class="pr-[10px] w-[50%] border-1 border-[#000] inline-block">
+                    <input class="w-[100%] pl-[10px]" type="text" name="epq">
+                </div>
+                <div class="min-w-70 table-cell">
+                    <p class="text-[11px] inline-block">Put exact words in quotes: "rat terrier"</p>
+                </div>
+            </div>
+            <!-- this exact word or phrase end -->
+            <!-- any of these words: -->
+            <div class="bg-blue-200 w-[100%] h-[2rem] flex items-center flex-wrap">
+                <div class="min-w-40 w-[16%] inline-block">
+                    <p class="text-[11px]">any of these words:</p>
+                </div>
+                <div class="pr-[10px] w-[50%] border-1 border-[#000] inline-block">
+                    <input class="w-[100%] pl-[10px]" type="text" name="epq">
+                </div>
+                <div class="min-w-70 table-cell w-[32%] min-w-[270px] inline-block">
+                    <p class="text-[11px] inline-block">Type OR between all the words you want: miniature OR standard</p>
+                </div>
+            </div>
+            <!-- any of these words end -->
         </form>
         <!-- form end -->
     </div>
@@ -83,4 +111,3 @@
     </div>
 </body>
 </html> 
-
