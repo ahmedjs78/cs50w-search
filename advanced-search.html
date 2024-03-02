@@ -3,13 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+
     <title>Advanced search</title>
 </head>
 <body>
     <div class="header">
-        <a href="image-search.html">image-search</a>
-        <a href="index.html">regular Google Search</a>
+        <!-- header links -->
+        <div class="uper-links">
+            <button class=" border border-[#303134] hover:border-[#78797C]  p-[15px] rounded-[20px]">
+                <a href="image-search.html">image search</a>
+            </button>
+            <button class=" border border-[#303134] hover:border-[#78797C]  p-[15px] rounded-[20px]">
+                <a href="index.html"> regular search </a>
+            </button>
+        </div>
+        <!-- end header links -->
+        
+        <!-- advanced search logo -->
+        <div class="pl-[80px] pb-[40px]" >
+            <h1 class="text-[#d93025] text-[1.50rem]">Advanced Search</h1>
+        </div>
+        <!-- end advanced search logo -->
+
+        <!-- the green line div -->
+        <div class="w-[100%] h-[1px] bg-green-300"></div>
+        <!-- end green line -->
     </div>
-    <div></div>
+    <!-- search from -->
+    <div class="p-[2.20rem] bg-red-300 h-[100%] w-[100%]">
+        <!-- from start -->
+        <form action="https://www.google.com/search" class="flex flex-col gap-[10px]">
+            <!-- Finding pagfes with start -->
+            <div class="big-line-form bg-green-300 h-[41px] ">
+                <div class="flex justify-between ">
+                    <div class="w-[30%]">
+                        <p>Finding pages woith ...</p>
+                    </div>
+                    <div class="w-[40%]"></div>
+                    <div class="w-[30%]">
+                        <p>To do this in the search box.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- finding pages with end -->
+            <div class="bg-blue-200 w-[100%] h-[2rem] flex items-center flex-wrap">
+                <div class="min-w-40 w-[16%]">
+                    <p >all these words: </p>
+                </div>
+                <div class="pr-[10px] w-[56%] border-1 border-[#000] text-right">
+                    <input class="w-[90%]" type="text" name="q">
+                </div>
+                <div class="min-w-70 table-cell">
+                    <p class="text-[11px]">Type the important words: tri-colour rat terrier</p>
+                </div>
+            </div>
+        </form>
+        <!-- form end -->
+    </div>
+    <!-- end search from -->
+    <div>
+        <p>
+            https://www.google.com/
+            search?as_q=all+these+words&
+            as_epq=this+exact+word+or+phrase&
+            as_oq=any+of+these+words&
+            as_eq=non+of+these+words&
+            as_nlo=numbers+rangin+from+&
+            as_nhi=number+ranger&
+            lr=&cr=&as_qdr=all&
+            as_sitesearch=&
+            as_occt=any&
+            as_filetype=&
+            tbs=
+        </p>
+    </div>
 </body>
 </html> 
+
