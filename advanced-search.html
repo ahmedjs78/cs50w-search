@@ -11,65 +11,66 @@
     <title>Advanced search</title>
 </head>
 <body>
-    <div class="header">
-        <!-- header links -->
-        <div class="uper-links">
-            <button class=" border border-[#303134] hover:border-[#78797C]  p-[15px] rounded-[20px]">
-                <a href="image-search.html">image search</a>
-            </button>
-            <button class=" border border-[#303134] hover:border-[#78797C]  p-[15px] rounded-[20px]">
-                <a href="index.html"> regular search </a>
-            </button>
-        </div>
-        <!-- end header links -->
-        
-        <!-- advanced search logo -->
-        <div class="pl-[80px] pb-[40px]" >
-            <h1 class="text-[#d93025] text-[1.50rem]">Advanced Search</h1>
-        </div>
-        <!-- end advanced search logo -->
-
-        <!-- the green line div -->
-        <div class="w-[100%] h-[1px] bg-green-300"></div>
-        <!-- end green line -->
-    </div>
-    <!-- search from -->
-    <div class="p-[2.20rem] bg-red-300 h-[100%] w-[100%] max-w-[1140px]">
-        <!-- from start -->
-        <form action="https://www.google.com/search" class="flex flex-col gap-[10px]">
-            <!-- Finding pagfes with start -->
-            <div class="big-line-form bg-green-300 h-[41px] ">
-                <div class="flex justify-between ">
-                    <div class="w-[18%]">
-                        <p>Find pages with...</p>
-                    </div>
-                    <div class="w-[57%]"></div>
-                    <div class="w-[40%]">
-                        <p>To do this in the search box.</p>
-                    </div>
-                </div>
+    <div class="main-cont bg-white w-[100%]">
+        <div class="header">
+            <!-- header links -->
+            <div class="uper-links">
+                <button class=" color-[#000] bg-[#000] border border-[#303134] hover:border-[#78797C]  p-[15px] rounded-[10px]">
+                    <a href="image-search.html">image search</a>
+                </button>
+                <button class="bg-[#000] border border-[#303134] hover:border-[#78797C]  p-[15px] rounded-[10px]">
+                    <a href="index.html"> regular search </a>
+                </button>
             </div>
-            <!-- finding pages with end -->
-            <!-- all this words  -->
-            <div class="bg-blue-200 w-[100%] h-[2rem] flex items-center flex-wrap">
-                <div class="min-w-40 w-[16%] inline-block">
-                    <p class="text-[11px]">all these words: </p>
-                </div>
-                <div class="pr-[10px] w-[50%] border-1 border-[#000] inline-block">
-                    <input class="w-[100%] pl-[10px]" type="text" name="q">
-                </div>
-                <div class="min-w-70 table-cell">
-                    <p class="text-[11px] inline-block">Type the important words: tri-colour rat terrier</p>
-                </div>
+            <!-- end header links -->
+            
+            <!-- advanced search logo -->
+            <div class="pl-[80px] pb-[40px]" >
+                <h1 class="text-[#d93025] text-[1.50rem]">Advanced Search</h1>
             </div>
-            <!-- all these words end -->
-            <!-- this exact word or phrase -->
-            <div class="bg-blue-200 w-[100%] h-[2rem] flex items-center flex-wrap">
+            <!-- end advanced search logo -->
+            
+            <!-- the green line div -->
+            <div class="w-[100%] h-[1px] bg-[#000]"></div>
+            <!-- end green line -->
+        </div>
+        <!-- search from -->
+        <div class="p-[2.20rem] h-[100%] w-[100%] max-w-[1140px]">
+            <!-- from start -->
+            <form action="https://www.google.com/search" class="flex flex-col gap-[10px]">
+                <!-- Finding pagfes with start -->
+                <div class="big-line-form h-[41px] ">
+                    <div class="flex justify-between ">
+                        <div class="w-[18%]">
+                            <p>Find pages with...</p>
+                        </div>
+                        <div class="w-[57%]"></div>
+                        <div class="w-[40%]">
+                            <p>To do this in the search box.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- finding pages with end -->
+                <!-- all this words  -->
+                <div class="w-[100%] h-[2rem] flex items-center flex-wrap">
+                    <div class="min-w-40 w-[16%] inline-block">
+                        <p class="text-[11px]">all these words: </p>
+                    </div>
+                    <div class="pr-[10px] w-[50%] border-1 border-[#000] inline-block">
+                        <input class="w-[100%] pl-[10px] border " type="text" name="q">
+                    </div>
+                    <div class="min-w-70 table-cell">
+                        <p class="text-[11px] inline-block">Type the important words: tri-colour rat terrier</p>
+                    </div>
+                </div>
+                <!-- all these words end -->
+                <!-- this exact word or phrase -->
+                <div class=" w-[100%] h-[2rem] flex items-center flex-wrap">
                 <div class="min-w-40 w-[16%] inline-block">
                     <p class="text-[11px]">this exact word or phrase:</p>
                 </div>
                 <div class="pr-[10px] w-[50%] border-1 border-[#000] inline-block">
-                    <input class="w-[100%] pl-[10px]" type="text" name="epq">
+                    <input class="border w-[100%] pl-[10px]" type="text" name="epq">
                 </div>
                 <div class="min-w-70 table-cell">
                     <p class="text-[11px] inline-block">Put exact words in quotes: "rat terrier"</p>
@@ -77,37 +78,57 @@
             </div>
             <!-- this exact word or phrase end -->
             <!-- any of these words: -->
-            <div class="bg-blue-200 w-[100%] h-[2rem] flex items-center flex-wrap">
+            <div class="w-[100%] h-[2rem] flex items-center flex-wrap">
                 <div class="min-w-40 w-[16%] inline-block">
                     <p class="text-[11px]">any of these words:</p>
                 </div>
                 <div class="pr-[10px] w-[50%] border-1 border-[#000] inline-block">
-                    <input class="w-[100%] pl-[10px]" type="text" name="epq">
+                    <input class="border w-[100%] pl-[10px]" type="text" name="oq">
                 </div>
-                <div class="min-w-70 table-cell w-[32%] min-w-[270px] inline-block">
-                    <p class="text-[11px] inline-block">Type OR between all the words you want: miniature OR standard</p>
+                <div class="min-w-70 table-cell w-[32%] min-w-[270px] float-end inline-block">
+                    <p class="text-[11px] inline-block">Type OR between all the words you want: miniature OR standard </p>
                 </div>
             </div>
             <!-- any of these words end -->
+            <!-- none of these words start  -->
+            <div class="w-[100%] h-[2rem] flex items-center flex-wrap">
+                <div class="min-w-40 w-[16%] inline-block">
+                    <p class="text-[11px]">none of these words:</p>
+                </div>
+                <div class="pr-[10px] w-[50%] border-1 border-[#000] inline-block">
+                    <input class="border w-[100%] pl-[10px]" type="text" name="eq">
+                </div>
+                <div class="min-w-70 table-cell w-[32%] min-w-[270px] float-end inline-block">
+                    <p class="text-[11px] inline-block">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
+                </div>
+            </div>
+            <!-- none of these words end -->
+            <!-- numbers ranging from start -->
+            <div class="w-[100%] h-[2rem] flex items-center flex-wrap">
+                <div class="min-w-40 w-[16%] inline-block">
+                    <p class="text-[11px]">none of these words:</p>
+                </div>
+                <div class="pr-[10px] w-[50%] border-1 border-[#000] flex">
+                    <input class="border w-[50%] pl-[10px]" type="text" name="nlo">
+                    <p class="pr-[10px] pl-[10px]">to</p>
+                    <input class="border w-[50%] pl-[10px]" type="text" name="nhi">
+                </div>
+                <div class="min-w-70 table-cell w-[32%] min-w-[270px] float-end inline-block">
+                    <p class="text-[11px] inline-block">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</p>
+                </div>
+            </div>
+            <!-- numbers ranging from end -->
+            <!-- submit button start -->
+            <div class="w-[100%] text-center">
+                <button class="p-[8px] font-bold bg-[#000] text-white rounded-[8px]">
+                    <input type="submit" value="submit">
+                </button>
+            </div>
+            <!-- sumbit button end -->
         </form>
         <!-- form end -->
     </div>
     <!-- end search from -->
-    <div>
-        <p>
-            https://www.google.com/
-            search?as_q=all+these+words&
-            as_epq=this+exact+word+or+phrase&
-            as_oq=any+of+these+words&
-            as_eq=non+of+these+words&
-            as_nlo=numbers+rangin+from+&
-            as_nhi=number+ranger&
-            lr=&cr=&as_qdr=all&
-            as_sitesearch=&
-            as_occt=any&
-            as_filetype=&
-            tbs=
-        </p>
-    </div>
+</div>
 </body>
 </html> 
